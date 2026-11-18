@@ -1,0 +1,137 @@
+[
+  {
+    "name": "emis",
+    "concept": "emission_amount",
+    "meaning": "一次排放量",
+    "unit": "kg/yr",
+    "type_shape": "array[cntry; food_cat; species]",
+    "aliases": [],
+    "where": ""
+  },
+  {
+    "name": "emis_rate",
+    "concept": "emission_rate",
+    "meaning": "单位时间排放量",
+    "unit": "kg/yr",
+    "type_shape": "array[cntry; food_cat; species]",
+    "aliases": [],
+    "where": ""
+  },
+  {
+    "name": "pm25",
+    "concept": "pm25_grid",
+    "meaning": "网格 PM2.5 年均质量浓度",
+    "unit": "ug/m3",
+    "type_shape": "SpatRaster[lon;lat]",
+    "aliases": [],
+    "where": ""
+  },
+  {
+    "name": "pm25_files",
+    "concept": "pm25_grid_files",
+    "meaning": "参与计算的 PM2.5 栅格文件路径",
+    "unit": "-",
+    "type_shape": "character[]",
+    "aliases": [],
+    "where": ""
+  },
+  {
+    "name": "conc",
+    "concept": "pm25_receptor",
+    "meaning": "受体点 PM2.5 质量浓度",
+    "unit": "ug/m3",
+    "type_shape": "array[scen; recep]",
+    "aliases": [],
+    "where": ""
+  },
+  {
+    "name": "mort",
+    "concept": "mort_count",
+    "meaning": "归因死亡人数",
+    "unit": "人",
+    "type_shape": "data.frame[scen; age; cntry]",
+    "aliases": ["death"],
+    "where": ""
+  },
+  {
+    "name": "mort_rate",
+    "concept": "mort_rate",
+    "meaning": "归因死亡率",
+    "unit": "1/yr",
+    "type_shape": "data.frame[scen; age; cntry]",
+    "aliases": [],
+    "where": ""
+  },
+  {
+    "name": "contrib",
+    "concept": "contribution_share",
+    "meaning": "源或部门贡献占比",
+    "unit": "1",
+    "type_shape": "array[source; species]",
+    "aliases": [],
+    "where": ""
+  },
+  {
+    "name": "prod",
+    "concept": "mrio_prod",
+    "meaning": "生产端口径标识",
+    "unit": "-",
+    "type_shape": "character[]",
+    "aliases": [],
+    "where": ""
+  },
+  {
+    "name": "cons",
+    "concept": "mrio_cons",
+    "meaning": "消费端口径标识",
+    "unit": "-",
+    "type_shape": "character[]",
+    "aliases": [],
+    "where": ""
+  },
+  {
+    "name": "cntry",
+    "concept": "country_iso",
+    "meaning": "国家代码",
+    "unit": "ISO3",
+    "type_shape": "character[]",
+    "aliases": ["country", "Country"],
+    "where": ""
+  },
+  {
+    "name": "recep",
+    "concept": "receptor_country",
+    "meaning": "受体国家代码",
+    "unit": "ISO3",
+    "type_shape": "character[]",
+    "aliases": ["receptor"],
+    "where": ""
+  },
+  {
+    "name": "food_cat",
+    "concept": "food_category",
+    "meaning": "食品品类",
+    "unit": "-",
+    "type_shape": "factor[]",
+    "aliases": [],
+    "where": ""
+  },
+  {
+    "name": "SCE17",
+    "concept": "scenario_17region",
+    "meaning": "17 区域情景代码",
+    "unit": "-",
+    "type_shape": "character[]",
+    "aliases": [],
+    "where": ""
+  },
+  {
+    "name": "has_cropland",
+    "concept": "has_cropland",
+    "meaning": "网格是否含耕地",
+    "unit": "-",
+    "type_shape": "logical[]",
+    "aliases": ["has.cropland"],
+    "where": ""
+  }
+]
